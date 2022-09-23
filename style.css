@@ -96,8 +96,24 @@
     0% {
         transform: rotate(1turn);
     }
+}
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover{
+    animation: partial-rotate 1s linear;
+}
+@keyframes partial-rotate{
+    0%{
+        transform: rotate(0)
+    }
+    75%{
+        transform: rotate(315deg)
+    }
+    100%{
+        transform: rotate(0)
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
